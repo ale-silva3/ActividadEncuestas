@@ -23,7 +23,7 @@ namespace EncuestasForm
         {
             FormRegistroDeEncuesta fRegistro = new FormRegistroDeEncuesta();
 
-            if (fRegistro.ShowDialog() == DialogResult.OK) 
+            if (fRegistro.ShowDialog() == DialogResult.OK)
             {
                 Encuesta nuevo = new Encuesta();
 
@@ -34,7 +34,7 @@ namespace EncuestasForm
                 nuevo.UsaTransportePublico = fRegistro.chbUsaTP.Checked;//Consulta("¿Usa Transporte público?: S/N");
 
                 //Console.WriteLine("¿Cuál es la distancia aproximada a su destino de trabajo/estudio en km? (ej:1,5)\n");
-                nuevo.DistanciaASuDestino = Convert.ToDouble(Console.ReadLine());
+                nuevo.DistanciaASuDestino = Convert.ToDouble(fRegistro.txtDistancia.Text);
 
                 bool puedeSerContactado = false;//Consulta("¿Puede ser contactado?: S/N");
                 if (puedeSerContactado == true)
@@ -48,7 +48,28 @@ namespace EncuestasForm
 
                 //Console.WriteLine("\nEncuesta procesada!");
             }
+            else MessageBox.Show("Cancelado por el Usuario");
 
+        }
+
+        private void btnListarInforme_Click(object sender, EventArgs e)
+        {
+            FormListaDeInforme fInforme = new FormListaDeInforme();
+
+            fInforme.listaInf.Items.Add(($"\t{"Bicicleta:",-20}  {proceso.PorcBicleta,10:f2}%"));
+            fInforme.listaInf.Items.Add(($"\t{"Automóvil:",-20}  {proceso.PorcAuto,10:f2}%"));
+            fInforme.listaInf.Items.Add(($"\t{"Transporte público:",-20}  {proceso.PorcTranspPublico,10:f2}%"));
+
+            fInforme.ShowDialog();
+            /*
+            Console.WriteLine("\t\t Informe de resultados \n");
+            Console.WriteLine("Modo de transporte habitual\n");
+
+            Console.WriteLine($"\t{"Bicicleta:",-20}  {proceso.PorcBicleta,10:f2}%");
+            Console.WriteLine($"\t{"Automóvil:",-20}  {proceso.PorcAuto,10:f2}%");
+            Console.WriteLine($"\t{"Transporte público:",-20}  {proceso.PorcTranspPublico,10:f2}%");
+
+            Console.WriteLine("Presione una tecla para volver al menú principal"); */
         }
     }
 }
