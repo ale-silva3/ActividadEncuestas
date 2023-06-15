@@ -37,16 +37,17 @@
             // 
             this.btnRegEncuesta.Location = new System.Drawing.Point(294, 94);
             this.btnRegEncuesta.Name = "btnRegEncuesta";
-            this.btnRegEncuesta.Size = new System.Drawing.Size(218, 23);
+            this.btnRegEncuesta.Size = new System.Drawing.Size(214, 51);
             this.btnRegEncuesta.TabIndex = 0;
             this.btnRegEncuesta.Text = "Registro De Encuesta";
             this.btnRegEncuesta.UseVisualStyleBackColor = true;
+            this.btnRegEncuesta.Click += new System.EventHandler(this.btnRegEncuesta_Click);
             // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(294, 180);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(218, 23);
+            this.button2.Size = new System.Drawing.Size(214, 51);
             this.button2.TabIndex = 1;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
@@ -55,7 +56,7 @@
             // 
             this.button3.Location = new System.Drawing.Point(294, 266);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(218, 23);
+            this.button3.Size = new System.Drawing.Size(214, 51);
             this.button3.TabIndex = 2;
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncuestasCMD", "EncuestasCM
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncuestasLib", "EncuestasLib\EncuestasLib.csproj", "{D2BBECDE-BE37-4E8B-93A0-74A4852639E9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncuestasForm", "EncuestasForm\EncuestasForm.csproj", "{278356C5-4808-402E-AA06-88735E223DEA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D2BBECDE-BE37-4E8B-93A0-74A4852639E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D2BBECDE-BE37-4E8B-93A0-74A4852639E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D2BBECDE-BE37-4E8B-93A0-74A4852639E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{278356C5-4808-402E-AA06-88735E223DEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{278356C5-4808-402E-AA06-88735E223DEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{278356C5-4808-402E-AA06-88735E223DEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{278356C5-4808-402E-AA06-88735E223DEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
