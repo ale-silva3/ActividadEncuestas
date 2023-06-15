@@ -9,3 +9,8 @@ Temas:
 
 El diagrama UML:<br/>
 ![alt text](https://github.com/fernandofilipuzzi-utn/ActividadEncuestas/blob/main/EncuestasMediosTransporte/EncuestasCMD/uml/encuesta.jpg?raw=true)
+
+Integrantes
+
+- Francisco Lencinas
+- Alejandro Silva
